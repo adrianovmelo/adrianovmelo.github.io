@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Adriano Melo - Trajetória Profissional</title>
+<meta name="description" content="Artigo profissional sobre a trajetória de Adriano Melo em gestão de projetos, delivery, agilidade, dados e IA aplicada à gestão.">
+<style>
+  :root{
+    --ink:#152235;
+    --muted:#5f6f83;
+    --line:#dce5ee;
+    --blue:#0e4c92;
+    --cyan:#00a7b5;
+    --soft:#f5f8fb;
+    --card:#ffffff;
+    --accent:#e9f7fb;
+    --dark:#0b1730;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth;background:#eef3f8}
+  body{margin:0;font-family:Inter,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);background:linear-gradient(180deg,#eef3f8 0,#f8fbfd 100%);}
+  a{color:var(--blue);text-decoration:none} a:hover{text-decoration:underline}
+  .topbar{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);}
+  .topbar-inner{max-width:1120px;margin:auto;padding:10px 20px;display:flex;justify-content:space-between;align-items:center;gap:16px}
+  .brand{font-weight:800;letter-spacing:.2px;color:var(--dark)}
+  .nav{display:flex;gap:14px;flex-wrap:wrap;font-size:13px}
+  .nav a{color:#29405f;font-weight:650}
+  .wrap{max-width:1120px;margin:24px auto 48px;padding:0 20px}
+  .pdf-page{width:210mm;min-height:297mm;margin:0 auto 22px;background:white;box-shadow:0 20px 60px rgba(25,52,83,.18);position:relative;overflow:hidden;padding:14mm 14mm 11mm;border-radius:4px}
+  .pdf-page:before{content:"";position:absolute;inset:0 0 auto 0;height:8px;background:linear-gradient(90deg,var(--blue),var(--cyan));}
+  .hero{display:grid;grid-template-columns:1.35fr .65fr;gap:18px;align-items:center;padding-bottom:14px;border-bottom:1px solid var(--line)}
+  .eyebrow{font-size:11px;letter-spacing:.12em;text-transform:uppercase;font-weight:800;color:var(--cyan);margin-bottom:8px}
+  h1{font-size:29px;line-height:1.03;margin:0 0 10px;color:var(--dark);letter-spacing:-.8px}
+  h2{font-size:15px;margin:0 0 9px;color:var(--dark);letter-spacing:-.2px}
+  h3{font-size:12.5px;margin:0 0 5px;color:var(--blue);letter-spacing:.05em;text-transform:uppercase}
+  p{font-size:11px;line-height:1.48;margin:0 0 8px;color:#2a3a4f}
+  .lead{font-size:12.6px;line-height:1.52;color:#25364c;margin-bottom:8px}
+  .meta{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+  .pill{font-size:10px;font-weight:700;padding:6px 9px;border-radius:999px;background:var(--soft);border:1px solid var(--line);color:#304a68}
+  .hero-card{background:linear-gradient(145deg,#0b1730,#0e4c92);border-radius:18px;padding:16px;color:white;min-height:160px;position:relative;overflow:hidden}
+  .hero-card svg{position:absolute;right:-10px;bottom:-18px;opacity:.55;width:145px;height:145px}
+  .kpi{position:relative;z-index:2;display:grid;gap:9px}
+  .kpi div{border-left:2px solid rgba(255,255,255,.5);padding-left:10px}
+  .kpi strong{display:block;font-size:20px;line-height:1;color:#fff}.kpi span{font-size:10.5px;color:#dbeeff}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:13px}
+  .card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px;box-shadow:0 8px 22px rgba(31,62,94,.06)}
+  .card.soft{background:linear-gradient(180deg,#f7fbfd,#fff)}
+  ul{margin:0;padding-left:15px} li{font-size:10.7px;line-height:1.42;margin:0 0 5px;color:#2c3e56}
+  .timeline{margin-top:13px;border:1px solid var(--line);border-radius:16px;padding:10px;background:#fbfdff}
+  .timeline-title{display:flex;align-items:center;justify-content:space-between;margin-bottom:7px}
+  .timeline-row{display:grid;grid-template-columns:82px 1fr;gap:8px;padding:6px 0;border-top:1px dashed #d8e3ee}.timeline-row:first-of-type{border-top:0}
+  .year{font-size:10px;font-weight:800;color:var(--cyan)}.tcopy{font-size:10.5px;line-height:1.35;color:#2f4056}.tcopy b{color:var(--dark)}
+  .section{margin-top:12px}.two{display:grid;grid-template-columns:.98fr 1.02fr;gap:12px}.three{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:10px}
+  .case{background:linear-gradient(135deg,#eaf8fb 0,#f8fbff 55%,#ffffff 100%);border:1px solid #cfe8ef;border-radius:18px;padding:14px;position:relative;overflow:hidden}
+  .case:after{content:"";position:absolute;right:-55px;top:-55px;width:130px;height:130px;border-radius:50%;background:rgba(0,167,181,.14)}
+  .case-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-top:10px}.step{background:rgba(255,255,255,.76);border:1px solid #d7edf2;border-radius:12px;padding:9px;min-height:78px}.step b{font-size:11px;color:var(--blue)}.step p{font-size:9.9px;line-height:1.35;margin-top:4px}
+  .quote{border-left:3px solid var(--cyan);padding:8px 0 8px 11px;background:#f7fbfd;border-radius:0 12px 12px 0;margin-top:9px}.quote p{font-size:10.4px;color:#31445c;margin:0}
+  .source-box{background:#0b1730;color:white;border-radius:16px;padding:12px}.source-box h3{color:#9be6ee}.source-box p,.source-box li{color:#e4edf7}.source-box a{color:#9be6ee}.source-box li{font-size:10.2px}.source-box ul{padding-left:15px}.source-metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:14px 0 12px}.source-metrics div{border:1px solid rgba(155,230,238,.28);border-radius:12px;padding:9px;background:rgba(255,255,255,.05)}.source-metrics b{display:block;color:#9be6ee;font-size:20px;line-height:1}.source-metrics span{display:block;color:#dce8f5;font-size:9.4px;line-height:1.25;margin-top:4px}
+  .footer{position:absolute;left:14mm;right:14mm;bottom:8mm;border-top:1px solid var(--line);padding-top:6px;display:flex;justify-content:space-between;align-items:center;font-size:9.2px;color:#758398}.footer a{color:#526a87}
+  .mini-tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}.mini-tag{font-size:9.4px;background:#eef7f8;color:#21606b;border:1px solid #cde9ee;padding:4px 7px;border-radius:999px;font-weight:700}
+  .cta{margin-top:10px;padding:11px 13px;border-radius:15px;background:linear-gradient(90deg,var(--blue),#186bb5);color:#fff;display:flex;align-items:center;justify-content:space-between;gap:12px}.cta p{color:#fff;margin:0;font-size:10.7px}.btn{display:inline-block;background:white;color:var(--blue);padding:7px 10px;border-radius:999px;font-weight:800;font-size:10px;white-space:nowrap}
+  .web-note{max-width:800px;margin:18px auto;color:#617085;text-align:center;font-size:13px}
+  .interactive{max-width:800px;margin:0 auto 32px;background:white;border:1px solid var(--line);border-radius:16px;box-shadow:0 12px 40px rgba(25,52,83,.12);padding:14px 16px}.interactive h2{font-size:18px}.interactive button{border:1px solid var(--line);background:#f8fbfd;border-radius:999px;padding:8px 10px;font-weight:700;color:#29405f;cursor:pointer}.interactive button.active{background:var(--blue);color:white}.detail{font-size:13px;line-height:1.5;color:#31445c;margin-top:10px;min-height:42px}
+  @media(max-width:900px){.pdf-page{width:100%;min-height:auto;padding:24px 18px}.hero,.grid,.two,.three,.case-grid{grid-template-columns:1fr}.footer{position:static;margin-top:16px}.topbar-inner{align-items:flex-start;flex-direction:column}.hero-card{min-height:135px}}
+  @page { size: A4; margin: 0; }
+  @media print{
+    html, body{width:210mm; margin:0; padding:0; background:white}.topbar,.web-note,.interactive{display:none}.wrap{margin:0;padding:0}.pdf-page{width:210mm;height:297mm;margin:0;box-shadow:none;border-radius:0;page-break-after:always}.pdf-page:last-child{page-break-after:auto}a{text-decoration:none;color:inherit} 
+  }
+</style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">Adriano Melo - Artigo Profissional</div>
+      <nav class="nav" aria-label="Navegação do artigo">
+        <a href="#trajetoria">Trajetória</a><a href="#entregas">Entregas</a><a href="#ia">IA aplicada</a><a href="#fontes">Fontes</a><a href="https://www.linkedin.com/in/adrianovmelo" target="_blank" rel="noopener">LinkedIn</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="pdf-page" id="trajetoria">
+      <div class="hero">
+        <div>
+          <div class="eyebrow">Gestão de Projetos - Delivery - Agilidade - IA</div>
+          <h1>Uma trajetória construída entre tecnologia, governança e entrega de valor</h1>
+          <p class="lead">Adriano Melo é um profissional sênior de Gestão de Projetos, Delivery Management, PMO, Portfólio e Agile Coaching, com mais de 15 anos de atuação em ambientes corporativos complexos. Sua experiência conecta estratégia, execução, pessoas, processos e tecnologia para ampliar previsibilidade, melhorar o fluxo de trabalho e transformar dados em decisões.</p>
+          <div class="meta"><span class="pill">São Paulo, Brasil</span><span class="pill">Projetos tradicionais, híbridos e ágeis</span><span class="pill">Financeiro, tecnologia, engenharia e setor público</span></div>
+        </div>
+        <aside class="hero-card" aria-label="Indicadores de trajetória">
+          <svg viewBox="0 0 160 160" aria-hidden="true"><defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="#fff"/><stop offset="1" stop-color="#9be6ee"/></linearGradient></defs><circle cx="80" cy="80" r="56" fill="none" stroke="url(#g)" stroke-width="2"/><circle cx="80" cy="80" r="30" fill="none" stroke="url(#g)" stroke-width="2"/><path d="M25 92 C50 38 111 32 136 75 C108 66 82 84 57 128" fill="none" stroke="#fff" stroke-width="3"/><circle cx="58" cy="57" r="5" fill="#9be6ee"/><circle cx="112" cy="83" r="5" fill="#fff"/><circle cx="70" cy="122" r="5" fill="#9be6ee"/></svg>
+          <div class="kpi">
+            <div><strong>15+</strong><span>anos em projetos, delivery, PMO e agilidade</span></div>
+            <div><strong>7+</strong><span>grandes organizações: Stone, CAIXA, Itaú, PagBank, Petrobras, Azul e Rio 2016</span></div>
+            <div><strong>Dados + IA</strong><span>relatórios, dashboards, insights e tomada de decisão</span></div>
+          </div>
+        </aside>
+      </div>
+
+      <div class="grid" id="entregas">
+        <article class="card soft">
+          <h3>Background técnico</h3>
+          <p>Com formação em Ciência da Computação e especializações em Gestão de Projetos e Administração pela FGV, Adriano iniciou sua carreira em ambientes técnicos, liderando suporte, implantação de sistemas, projetos de TI e operações críticas.</p>
+          <p>Esse repertório evoluiu para papéis de Project Controls, PMO, Scrum Master, Agile Coach, Delivery e Lean Agile Portfolio, sempre com forte orientação a governança, métricas, colaboração e resultado.</p>
+          <div class="mini-tags"><span class="mini-tag">Jira</span><span class="mini-tag">Confluence</span><span class="mini-tag">Azure DevOps</span><span class="mini-tag">MS Project</span><span class="mini-tag">GetDX</span><span class="mini-tag">OKRs</span></div>
+        </article>
+        <article class="card">
+          <h3>Principais entregas</h3>
+          <ul>
+            <li>Atuação em Lean Agile Portfolio na Stone, conectando Banking, Produto, Engenharia e liderança executiva.</li>
+            <li>Governança de entrega no programa de Crédito Imobiliário da CAIXA, em ambiente regulado e de grande escala.</li>
+            <li>Transformação digital e gestão de portfólio em instituição financeira, com OKRs, Flight Levels e PI Planning.</li>
+            <li>Entrega de sistemas críticos de Food & Beverage nos Jogos Rio 2016, incluindo controle de refeições e Food Safety.</li>
+            <li>Project Controls na Petrobras, com WBS, baseline, EVM, controle físico-financeiro e gestão de riscos.</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="timeline" aria-label="Linha do tempo profissional resumida">
+        <div class="timeline-title"><h2>Da base técnica à liderança em delivery</h2><span class="pill">linha do tempo</span></div>
+        <div class="timeline-row"><div class="year">2004-2010</div><div class="tcopy"><b>Shift</b> - liderança de suporte e implantação, estruturando processos, atendimento e gestão de equipes técnicas.</div></div>
+        <div class="timeline-row"><div class="year">2011-2016</div><div class="tcopy"><b>Petrobras e Rio 2016</b> - controle de projetos, contratos, KPIs, riscos e sistemas críticos em operações complexas.</div></div>
+        <div class="timeline-row"><div class="year">2018-2023</div><div class="tcopy"><b>Azul, Lambda3, PagBank e NTT DATA</b> - Scrum, Kanban, Scrumban, discovery, métricas, OKRs e transformação digital.</div></div>
+        <div class="timeline-row"><div class="year">2023-2026</div><div class="tcopy"><b>Unisys/CAIXA e Stone</b> - governança escalada, Lean Portfolio, Engineering Intelligence, dashboards, IA Generativa e decisão baseada em dados.</div></div>
+      </div>
+
+      <div class="footer"><span>Artigo profissional - Adriano Melo</span><span>Delivery | Projetos | Agilidade | IA aplicada à gestão</span></div>
+    </section>
+
+    <section class="pdf-page" id="ia">
+      <div class="section two">
+        <article class="case">
+          <div class="eyebrow">Case prático</div>
+          <h1 style="font-size:24px;margin-bottom:8px">IA como aceleradora de clareza, foco e controle</h1>
+          <p class="lead">Em uma atuação recente de Lean Agile Portfolio e Delivery & Engineering Intelligence, a IA foi aplicada para reduzir ruído operacional e melhorar a qualidade das decisões. O objetivo não era substituir o olhar humano, mas ampliar a capacidade de análise, síntese e acompanhamento.</p>
+          <div class="case-grid">
+            <div class="step"><b>1. Refinamento melhor estruturado</b><p>A IA apoiava a análise de épicos e user stories, sugerindo critérios de aceite, riscos, dependências e perguntas para reduzir ambiguidade antes da entrega.</p></div>
+            <div class="step"><b>2. Clareza para execução</b><p>Stories passaram a chegar aos times com mais contexto, objetividade e alinhamento entre problema, valor esperado, escopo e resultado.</p></div>
+            <div class="step"><b>3. Check-ins de OKRs</b><p>Com consultas ao Jira, a IA consolidava status das iniciativas, última evolução, bloqueios e pontos de atenção para as reuniões de acompanhamento.</p></div>
+          </div>
+          <div class="quote"><p>O ganho mais relevante foi transformar informações dispersas em conversas mais objetivas: menos tempo procurando dados, mais tempo discutindo decisões, riscos e próximos passos.</p></div>
+        </article>
+        <aside class="source-box" id="fontes">
+          <h3>Curiosidade da web</h3>
+          <p>O movimento já aparece em pesquisas e produtos do mercado. O PMI aponta crescimento acelerado da IA Generativa em project management, com alta adoção entre profissionais que aplicam GenAI em tarefas de projeto. A McKinsey também identificou ganhos importantes em tarefas de desenvolvimento de software com IA Generativa, reforçando o impacto potencial na cadeia de delivery.</p>
+          <div class="source-metrics"><div><b>2x</b><span>aumento no uso de GenAI por knowledge workers em seis meses</span></div><div><b>+86%</b><span>crescimento de organizações usando IA em pelo menos metade dos projetos</span></div><div><b>43%</b><span>dos usuários aplicando GenAI em mais da metade das tarefas de projeto</span></div></div>
+          <ul>
+            <li><a href="https://www.pmi.org/learning/thought-leadership/transforming-project-management-with-generative-ai" target="_blank" rel="noopener">PMI - Transforming Project Management with GenAI</a></li>
+            <li><a href="https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/unleashing-developer-productivity-with-generative-ai" target="_blank" rel="noopener">McKinsey - Developer productivity with GenAI</a></li>
+            <li><a href="https://www.atlassian.com/blog/jira/new-jira-features-for-all-teams" target="_blank" rel="noopener">Atlassian - Jira com AI agents</a></li>
+          </ul>
+        </aside>
+      </div>
+
+      <div class="section three">
+        <article class="card"><h3>Gestão e governança</h3><p>Experiência em project management, PMO, portfólio, contratos, riscos, fornecedores, status executivo, KPIs e tomada de decisão baseada em dados.</p></article>
+        <article class="card"><h3>Agilidade e produto</h3><p>Atuação com Scrum, Kanban, Scrumban, SAFe, Flight Levels, OKRs, discovery, backlog, priorização, métricas de fluxo e melhoria contínua.</p></article>
+        <article class="card"><h3>Dados e IA</h3><p>Uso de Jira, Confluence, GetDX, dashboards e IA Generativa para relatórios, insights, refinamento, acompanhamento de iniciativas e performance.</p></article>
+      </div>
+
+      <div class="section card soft">
+        <h2>O diferencial: unir método, contexto e tecnologia</h2>
+        <p>Ao longo da carreira, Adriano desenvolveu uma atuação híbrida: conhece a disciplina de gestão tradicional, domina práticas ágeis modernas e transita bem entre negócio, produto, engenharia, PMO e liderança. Essa combinação permite atuar em ambientes que exigem governança sem perder velocidade, colaboração sem perder controle e inovação sem perder clareza.</p>
+        <p>No cenário atual, em que IA, dados e automação estão redefinindo a forma de trabalhar, seu posicionamento se fortalece: utilizar tecnologia para ampliar visibilidade, apoiar decisões e acelerar entregas com mais foco em valor.</p>
+        <div class="cta"><p><b>Conecte-se com Adriano Melo</b><br>Projetos, Delivery Management, PMO, Agilidade, Portfólio e IA aplicada à gestão.</p><a class="btn" href="https://www.linkedin.com/in/adrianovmelo" target="_blank" rel="noopener">Ver LinkedIn</a></div>
+      </div>
+
+      <div class="footer"><span>Fontes externas: PMI, McKinsey e Atlassian</span><span>Documento web com links clicáveis</span></div>
+    </section>
+
+    <p class="web-note">Dica: use a navegação superior para ir direto aos blocos do artigo. No PDF, os links externos também permanecem clicáveis.</p>
+    <section class="interactive" aria-label="Resumo interativo">
+      <h2>Resumo interativo</h2>
+      <div style="display:flex;gap:8px;flex-wrap:wrap">
+        <button class="active" data-detail="delivery">Delivery</button>
+        <button data-detail="agile">Agilidade</button>
+        <button data-detail="ai">IA aplicada</button>
+      </div>
+      <div class="detail" id="detailText">Conecta estratégia, governança, riscos, dependências, métricas e execução para melhorar previsibilidade e entrega de valor.</div>
+    </section>
+  </main>
+<script>
+const details={
+  delivery:'Conecta estratégia, governança, riscos, dependências, métricas e execução para melhorar previsibilidade e entrega de valor.',
+  agile:'Facilita evolução de times e lideranças com Scrum, Kanban, SAFe, OKRs, métricas de fluxo, discovery, priorização e melhoria contínua.',
+  ai:'Aplica IA Generativa para melhorar refinamento de stories, consolidar informações do Jira, gerar insights e tornar check-ins de OKRs mais objetivos.'
+};
+document.querySelectorAll('.interactive button').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    document.querySelectorAll('.interactive button').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById('detailText').textContent=details[btn.dataset.detail];
+  });
+});
+</script>
+</body>
+</html>
